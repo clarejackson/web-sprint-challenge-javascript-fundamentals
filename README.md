@@ -38,7 +38,7 @@ A callback is an entire function that is invoked inside another function, called
 Closure is when a function can reach back into a parent function to access data and/or variables. This creates a closure.
 
 4. Describe the four rules of the 'this' keyword.
-
+git 
 Window Binding - when in the global scope and refers to all of JS
 
 Implicit Binding - refers to the object before the dot when invoked

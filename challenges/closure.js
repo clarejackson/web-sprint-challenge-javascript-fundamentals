@@ -17,7 +17,7 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+// Nested function is the child and it is reaching outside of itself to the parent because it is still within its scope.
 
 /* Task 2: Counter */
 
