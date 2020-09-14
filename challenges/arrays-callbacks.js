@@ -21,20 +21,17 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-zooAnimals.forEach((animal) =>{
-  displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`);
-});
-console.log(displayNames);
+zooAnimals.forEach(animal =>{
+  displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`)
+  });
+  console.log(displayNames);
 
-// /* Request 2: .map()
-
+//Request 2: .map()
 // The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
 
 // */
 
-const lowCaseAnimalNames = zooAnimals.map(animal =>{
-  return animal.animal_name.toLowerCase();
-});
+const lowCaseAnimalNames = zooAnimals.map((animal) => animal.animal_name.toLowerCase());
 console.log(lowCaseAnimalNames);
 
 // // /* Request 3: .filter() 
@@ -55,7 +52,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 let populationTotal = zooAnimals.reduce((accumulator, animal) =>{
-  return accumulator + animal.population;
+accumulator + animal.population;
 }, 0);
 console.log(populationTotal);
 
